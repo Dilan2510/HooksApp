@@ -10,6 +10,12 @@
 // import "./08-useReducer/intro-reducer";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import TodoReducer from "./08-useReducer/TodoReducer";
+// import TodoReducer from "./08-useReducer/TodoReducer";
+import { MainApp } from "./09-useContext/MainApp";
+import { BrowserRouter } from "react-router";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<TodoReducer />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <MainApp />
+  </BrowserRouter>
+);

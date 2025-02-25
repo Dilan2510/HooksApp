@@ -4,10 +4,21 @@ import AddTodo from "./AddTodo";
 import { TodoList } from "./TodoList";
 
 const TodoReducer = () => {
-  const { handleSubmit, handleDeleteTodo, handleToggleTodo, state } = useTodo();
+  const {
+    handleSubmit,
+    handleDeleteTodo,
+    handleToggleTodo,
+    state,
+    todosCount,
+    PendingTodosCount,
+  } = useTodo();
+
   return (
     <>
-      <h1>TodoReducer</h1>
+      <h1>
+        TodoReducer: {todosCount}
+        <span>Pendientes: {PendingTodosCount}</span>
+      </h1>
       <hr />
       <div className="row">
         <div className="col-7">
