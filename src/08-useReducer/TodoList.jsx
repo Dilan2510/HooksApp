@@ -13,7 +13,7 @@ export const TodoList = ({ state = [], onRemove, onToggle }) => {
           </tr>
         </thead>
         <tbody>
-          {state.map((res) => (
+          {Object.values(state)?.map((res) => (
             <TodoItem
               res={res}
               key={res.id}

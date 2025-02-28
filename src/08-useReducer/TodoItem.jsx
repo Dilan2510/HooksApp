@@ -6,6 +6,7 @@ const TodoItem = ({ res, onRemove, onToggle }) => {
         className={`${res.done && "text-decoration-line-through"}`}
         key={res.id}
         onClick={() => onToggle(res.id)}
+        aria-label="tr"
       >
         <th scope="row">{res.id}</th>
         <td>{res.todo}</td>
